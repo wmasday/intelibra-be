@@ -27,9 +27,10 @@ class User extends Authenticatable
         'strike',
         'token',
         'password',
+        'age'
     ];
 
-    protected $dates = ['birthdate'];
+    protected $appends = ['age'];
 
     public function getAgeAttribute()
     {
